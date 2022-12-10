@@ -1,0 +1,5 @@
+.page_not_found{
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
