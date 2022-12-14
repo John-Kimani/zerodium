@@ -16,7 +16,7 @@
   --container-color: #fff;
   --primary-project-color: #37474F;
   --secondary-project-color: #232323;
-  /* --tertiary-project-color: ; */
+  --tertiary-project-color: black;
 
   /*========== Font and typography ==========*/
   --body-font: "Roboto Serif", serif;

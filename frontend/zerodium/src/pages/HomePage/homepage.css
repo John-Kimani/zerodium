@@ -1,0 +1,5 @@
+.blog_section{
+    background-color: var(--primary-project-color);
+    padding-top: var(--mb-2);
+    padding-bottom: var(--mb-3);
+}

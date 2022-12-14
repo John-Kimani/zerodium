@@ -1,0 +1,44 @@
+.feature{
+    display: grid;
+    place-content: center;
+}
+
+.featured_blog{
+    width: 100%;
+}
+
+.featured_blog-img{
+    max-height: 350px;
+}
+
+.featured_blog-content{
+    height: 220px;
+}
+
+.featured_blog-title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--tertiary-project-color);
+}
+
+.featured_blog-content{
+    font-size: var(--small-font-size);
+    color: var(--tertiary-project-color);
+}
+
+.read_more-btn{
+    color: var(--tertiary-project-color);
+}
+
+.blog_post-img{
+    max-height: 200px;
+}
+
+.blog_title{
+    text-align: center;
+    color: var(--tertiary-project-color);
+}
+
+.blog_content{
+    font-size: var(--small-font-size);
+}
