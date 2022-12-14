@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/Footer";
 import HeroSection from "../../components/herosection/Herosection";
 import Services from "../../components/services/Services";
 import "./homepage.css";
@@ -7,6 +8,7 @@ const HomePage = () => {
     <main className="home__page">
       <HeroSection />
       <Services />
+      <Footer />
     </main>
   );
 };

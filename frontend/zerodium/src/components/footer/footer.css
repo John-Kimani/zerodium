@@ -1,0 +1,115 @@
+footer {
+    background-color: var(--secondary-project-color);
+    padding: var(--mb-2);
+}
+
+.get_in_touch{
+    padding: 2rem 4rem;
+    height: 400px;
+}
+
+.contact_us-input{
+    width: 100%;
+    outline: none;
+    border-right: none;
+    border-bottom: 1px solid var(--container-color);
+    background-color: var(--secondary-project-color);
+    color: var(--container-color);
+    height: var(--mb-2-5);
+}
+
+.contact_us-textarea{
+    background-color: var(--secondary-project-color);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--container-color);
+    color: var(--container-color);
+    width: 95%;
+    margin-left: var(--mb-0-5);
+}
+
+.contact__us{
+    height: 400px;
+    display: grid;
+    place-content: center;
+    color: var(--container-color);
+}
+
+.country-abv{
+    font-size: var(--smaller-font-size);
+}
+
+.contact-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+.contact-info{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-small);
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author-info{
+    display: grid;
+    place-content: center;
+    font-size: var(--smaller-font-size);
+}
+
+.footer__copy-link{
+    color: #7A8289;
+}
+
+.footer__copy-link:hover {
+    transition: .45s ease-in-out;
+    color: var(--container-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media screen and (max-width: 768px) {    
+    .contact-title{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+    .contact-info{
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-small);
+    }
+    }
+
+@media screen and (max-width: 576px) {
+    .contact-title{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+    .contact-info{
+        font-size: var(--small-font-size);
+        font-weight: var(--font-small);
+    }
+
+    .footer__copy{
+        font-size: var(--smaller-font-size);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .contact-title{
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+    .contact-info{
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-small);
+    }
+
+    .footer__copy{
+        font-size: var(--tiny-font-size);
+    }
+}
