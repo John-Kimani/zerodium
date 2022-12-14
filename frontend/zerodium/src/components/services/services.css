@@ -1,0 +1,79 @@
+.sevices_section{
+    background-color: var(--primary-project-color);
+    padding: var(--mb-2);
+}
+
+.service-card{
+    height: 20rem;
+    display: grid;
+    place-content: center;
+    background-color: var(--primary-project-color);
+    border: none;
+    color: var(--container-color);
+}
+
+.service_card-name{
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
+.service_card-desc{
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .service-card{
+        height: 10rem;
+        border: 2px solid red;
+    }
+
+    .service_card-name{
+        font-size: var(--h3-font-size);
+        text-align: center;
+    }
+    
+    .service_card-desc{
+        font-size: var(--small-font-size);
+        text-align: center;
+    }
+    }
+
+@media screen and (max-width: 576px) {
+    .service-card{
+        height: 10rem;
+        border: 2px solid red;
+    }
+
+    .service_card-name{
+        font-size: var(--h3-font-size);
+        text-align: center;
+    }
+    
+    .service_card-desc{
+        font-size: var(--smaller-font-size);
+        text-align: center;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .service-card{
+        height: 10rem;
+        border: 2px solid red;
+    }
+
+    .service_card-name{
+        font-size: var(--normal-font-size);
+        text-align: center;
+    }
+    
+    .service_card-desc{
+        font-size: var(--smaller-font-size);
+        text-align: center;
+    }
+}
