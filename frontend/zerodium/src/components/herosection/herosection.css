@@ -1,0 +1,21 @@
+.hero__section{
+    background-image: url(../../assets/herosection.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    padding: 0 3rem;
+}
+
+.content > h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
