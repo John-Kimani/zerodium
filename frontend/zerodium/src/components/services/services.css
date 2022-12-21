@@ -12,6 +12,13 @@
     color: var(--container-color);
 }
 
+.icon{
+    display: grid;
+    place-content: center;
+    padding-top: var(--mb-0-5);
+    padding-bottom: var(--mb-1);
+}
+
 .service_card-name{
     font-size: var(--h2-font-size);
     text-align: center;
