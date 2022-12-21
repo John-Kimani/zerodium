@@ -122,7 +122,7 @@ height: auto;
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section__title {
-font-size: var(--h1-font-size);
+font-size: var(--h2-font-size);
 color: var(--container-color);
 }
 

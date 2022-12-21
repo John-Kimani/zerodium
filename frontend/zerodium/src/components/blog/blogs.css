@@ -27,7 +27,8 @@
 }
 
 .read_more-btn{
-    color: var(--tertiary-project-color);
+    color: orange;
+    border: none !important;
 }
 
 .blog_post-img{
