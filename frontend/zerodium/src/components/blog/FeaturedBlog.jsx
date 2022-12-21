@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 
 import "./blogs.css";
 
-import FeaturedBlogIMG from "../../assets/mobile-development.jpg";
-
 import Spinner from "react-bootstrap/Spinner";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -40,7 +38,6 @@ const FeaturedBlog = () => {
                   <p>Could not retrive featured blog post.</p>
                 ) : (
                   <>
-                    {featuredPost.id}
                     <div className="row">
                       <div key={featuredPost.id} className="col-md-4 featured_blog-img">
                         <Card.Img

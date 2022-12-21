@@ -6,12 +6,12 @@ import Button from "react-bootstrap/Button";
 
 const BlogPost = () => {
   return (
-    <main className="container container-fluid mt-5">
+    <main className="container container-fluid mt-2">
       <div className="row test">
         {BlogPosts.map(({ id, blogImage, blogTitle,blogContent }) => {
           return (
-            <div className="col-md-4 mt-4">
-              <Card key={id} className="blog_post">
+            <div className="col-md-4 mt-4" key={id}>
+              <Card  className="blog_post">
                 <Card.Img variant="top" src={blogImage} className="blog_post-img img-fluid img-thumbnail"/>
                 <Card.Body>
                   <Card.Title className="blog_title">{blogTitle}</Card.Title>

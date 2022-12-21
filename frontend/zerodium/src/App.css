@@ -91,6 +91,7 @@ font-size: var(--normal-font-size);
 body {
 background-color: var(--body-color);
 color: var(--text-color);
+font-family: var(--body-font);
 }
 
 h1,
