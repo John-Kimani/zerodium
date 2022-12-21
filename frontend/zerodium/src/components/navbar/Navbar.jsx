@@ -23,7 +23,7 @@ const NavBar = () => {
             <Nav.Link href="#blogs" id="link">
               Blog
             </Nav.Link>
-            <Nav.Link href="https://twitter.com/Chal13W1zz" target="_blank">
+            <Nav.Link href="https://chal13w1zz.medium.com/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
