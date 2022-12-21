@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 990px;
 }
 
 .content {
@@ -11,11 +11,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 120px;
     padding: 0 3rem;
 }
 
-.content > h2 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+.content > p {
+    color: #000;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-small);
+}
+
+@media screen and (max-width: 576px) {
+    .hero__section {
+        background: none;
+        height: 200px;
+        padding-top: var(--mb-3);
+    }
+
+    .content > p {
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .content > p {
+        font-size: var(--small-font-size);
+    }
 }
