@@ -3,6 +3,10 @@ footer {
     padding: var(--mb-2);
 }
 
+#footer__content{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .get_in_touch{
     padding: 2rem 4rem;
     height: 400px;
@@ -13,13 +17,13 @@ footer {
     outline: none;
     border-right: none;
     border-bottom: 1px solid var(--container-color);
-    background-color: var(--secondary-project-color);
+    background-color: rgba(0, 0, 0, 0.1);
     color: var(--container-color);
     height: var(--mb-2-5);
 }
 
 .contact_us-textarea{
-    background-color: var(--secondary-project-color);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     outline: none;
     border-bottom: 1px solid var(--container-color);
@@ -58,6 +62,9 @@ footer {
     display: grid;
     place-content: center;
     font-size: var(--smaller-font-size);
+    width: 100%;
+    padding-top: var(--mb-3);
+    padding-bottom: var(--mb-3);
 }
 
 .footer__copy-link{
