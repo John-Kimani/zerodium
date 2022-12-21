@@ -8,11 +8,12 @@
 }
 
 .featured_blog-img{
-    max-height: 350px;
+    display: grid;
+    place-content: center;
 }
 
 .featured_blog-content{
-    height: 220px;
+    height: 200px;
 }
 
 .featured_blog-title{
@@ -23,7 +24,6 @@
 
 .featured_blog-content{
     font-size: var(--small-font-size);
-    color: var(--tertiary-project-color);
 }
 
 .read_more-btn{

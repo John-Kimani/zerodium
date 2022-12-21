@@ -17,14 +17,11 @@ const FeaturedBlog = () => {
   useEffect(() => {
     (async () => {
       const response = await fetch(featuredBlogBaseUrl);
-      console.log(response);
 
       if (response.ok) {
         const results = await response.json();
-        console.log("Some data fetched");
-        setFeaturedPost(results.data)
+        setFeaturedPost(results);
       } else {
-        console.log("No posts");
         setFeaturedPost(null);
       }
     })();
@@ -40,37 +37,37 @@ const FeaturedBlog = () => {
             ) : (
               <>
                 {featuredPost === null ? (
-                  <p>Could not retrive blog posts.</p>
+                  <p>Could not retrive featured blog post.</p>
                 ) : (
                   <>
-                    <div className="col-md-4">
-                      <Card.Img
-                        variant="top"
-                        src={FeaturedBlogIMG}
-                        className="featured_blog-img img-fluid img-thumbnail"
-                      />
-                    </div>
-                    <div className="col-md-8">
-                      <Card.Body className="featured_blog-content">
-                        <Card.Title className="featured_blog-title">
-                          Android Development
-                        </Card.Title>
-                        <Card.Text className="featured_blog-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Sint repellat, quo possimus eius magnam laborum,
-                          quod illum facere neque, odio officiis id magni
-                          maxime! Atque maxime similique reiciendis nisi porro.
-                        </Card.Text>
-                      </Card.Body>
-                      <Card.Footer>
-                        <Button
-                          className="read_more-btn"
-                          variant="outline-secondary"
-                          size="md"
-                        >
-                          Read More
-                        </Button>
-                      </Card.Footer>
+                    {featuredPost.id}
+                    <div className="row">
+                      <div key={featuredPost.id} className="col-md-4 featured_blog-img">
+                        <Card.Img
+                          variant="top"
+                          src={featuredPost.blogImage}
+                          className="img-fluid img-thumbnail"
+                        />
+                      </div>
+                      <div className="col-md-8">
+                        <Card.Body className="featured_blog-content">
+                          <Card.Title className="featured_blog-title">
+                            {featuredPost.blogTitle}
+                          </Card.Title>
+                          <Card.Text className="featured_blog-content">
+                            {featuredPost.blogContent}
+                          </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                          <Button
+                            className="read_more-btn"
+                            variant="outline-secondary"
+                            size="md"
+                          >
+                            Read More
+                          </Button>
+                        </Card.Footer>
+                      </div>
                     </div>
                   </>
                 )}
