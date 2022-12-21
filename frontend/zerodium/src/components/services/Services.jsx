@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 
 const Services = () => {
   return (
-    <main className="container-fluid sevices_section">
+    <main className="container-fluid sevices_section" id="services">
       <div className="container services">
         <div className="row">
           {ServicesData.map(({ id, serviceName, serviceDesc }) => {

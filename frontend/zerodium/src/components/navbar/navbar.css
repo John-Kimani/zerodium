@@ -1,0 +1,21 @@
+.navigation__bar{
+    background-color: var(--tertiary-project-color);
+}
+
+#navigation_brand-logo{
+    color: var(--container-color);
+}
+
+#link{
+    color: var(--container-color);
+}
+
+#nav-toogle-btn{
+    border-color: var(--container-color);
+    color: var(--container-color);
+    background-color: var(--container-color);
+}
+
+.navbar-toggler-icon{
+    color: var(--container-color);
+}
