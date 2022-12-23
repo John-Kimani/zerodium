@@ -6,6 +6,7 @@ import NavBar from './components/navbar/Navbar';
 import HomePage from './pages/HomePage/Homepage';
 import PageNotFound from './components/error/PageNotFound';
 import ComingSoon from './components/comingsoon/ComingSoon';
+import BlogPage from './pages/BlogPage/BlogPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/coming-soon' element={ <ComingSoon />}/>
             {/* Blogs */}
+            <Route exact path='/blog/:id' element={ <BlogPage />} />
             <Route exact path='/' element={ <HomePage />}/>
             {/* Page not found */}
             <Route path='*' element={ <PageNotFound />}/>

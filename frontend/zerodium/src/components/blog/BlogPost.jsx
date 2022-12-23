@@ -6,6 +6,7 @@ import "./blogs.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const BlogPost = () => {
   const cardsBaseUrl = "https://zerodroidiumapi.up.railway.app/blogs/cards";
@@ -53,6 +54,7 @@ const BlogPost = () => {
                             </Card.Text>
                           </Card.Body>
                           <Card.Footer>
+                            <Link to={`/blog/${id}`}>
                             <Button
                               className="read_more-btn"
                               variant="outline-secondary"
@@ -60,6 +62,7 @@ const BlogPost = () => {
                             >
                               Read More
                             </Button>
+                            </Link>
                           </Card.Footer>
                         </Card>
                       </div>

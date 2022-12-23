@@ -5,6 +5,7 @@ import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const HorizontalBlogs = () => {
 
@@ -48,6 +49,7 @@ const HorizontalBlogs = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
+                <Link to={`/blog/${id}`}>
                 <Button
                   className="read_more-btn"
                   variant="outline-secondary"
@@ -55,6 +57,7 @@ const HorizontalBlogs = () => {
                 >
                   Read More
                 </Button>
+                </Link>
               </Card.Footer>
     
                 </Card>
