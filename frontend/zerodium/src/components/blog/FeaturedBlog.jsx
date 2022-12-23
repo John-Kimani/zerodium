@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 const FeaturedBlog = () => {
-  const featuredBlogBaseUrl = "https://zerodroidiumapi.up.railway.app/blogs/1";
+  const featuredBlogBaseUrl = "https://zerodroidiumapi.up.railway.app/blogs/featured";
 
   const [featuredPost, setFeaturedPost] = useState();
 
@@ -41,9 +41,8 @@ const FeaturedBlog = () => {
                     <div className="row">
                       <div key={featuredPost.id} className="col-md-4 featured_blog-img">
                         <Card.Img
-                          variant="top"
                           src={featuredPost.blogImage}
-                          className="img-fluid img-thumbnail"
+                          className="img-fluid img-thumbnail featured-image"
                         />
                       </div>
                       <div className="col-md-8">

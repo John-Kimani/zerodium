@@ -8,7 +8,7 @@ import { Spinner } from "react-bootstrap";
 
 const HorizontalBlogs = () => {
 
-  const articlesBaseUrl = 'https://zerodroidiumapi.up.railway.app/blogs';
+  const articlesBaseUrl = 'https://zerodroidiumapi.up.railway.app/blogs/old';
 
   const [articles, setArticles] = useState();
 

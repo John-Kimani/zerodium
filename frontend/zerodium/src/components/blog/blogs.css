@@ -12,6 +12,10 @@
     place-content: center;
 }
 
+.featured-image{
+    height: 250px;
+}
+
 .featured_blog-content{
     height: 200px;
 }
